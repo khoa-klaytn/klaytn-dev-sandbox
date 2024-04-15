@@ -34,8 +34,8 @@ const Home: NextPage = () => {
             <span className="font-semibold">npm run dev</span> to spin up the frontend.
           </li>
           <li>
-            5. Click the Connect Wallet button where you'll be prompted to connect your Kaikas or
-            Metamask wallet.
+            5. Click the Connect Wallet button where you&apos;ll be prompted to connect your Kaikas
+            or
           </li>
           <li>6. Make sure that you are connected to the Baobab network!</li>
           <li>
