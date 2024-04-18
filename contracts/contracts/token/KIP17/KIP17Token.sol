@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: MIT
 
-pragma solidity ^0.8.0;
+pragma solidity ^0.8.24;
 
 import "@klaytn/contracts/KIP/token/KIP17/KIP17.sol";
 import "@klaytn/contracts/KIP/token/KIP17/extensions/KIP17MetadataMintable.sol";
