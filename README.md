@@ -11,6 +11,7 @@ The following packages should be installed before using this source code.
 - git
 - `docker and docker compose` (Docker should be running in the background) for ubuntu/mac or Install `docker desktop` if using Windows machine
 - Node v16.14.0 or above
+- [pnpm](https://pnpm.io/installation) v8 or above
 
 ## Package Installation
 
@@ -18,8 +19,8 @@ Please install node packages first.
 
 ```bash
 cd contracts
-npm install
-npm install -g truffle@v5.1.61
+pnpm install
+pnpm install -g truffle@v5.1.61
 ```
 
 ## Running a Local Klaytn Network
@@ -31,14 +32,14 @@ Note: Execute below commands from gitbash if Windows machine is used
 You can easily deploy a local Klaytn network via the following command:
 
 ```bash
-npm run run:klaytn
+pnpm run run:klaytn
 ```
 
-To see the execution logs, run `npm run run:klaytn:log`.
-To stop the network, run `npm run run:klaytn:stop`.
-To resume the network, run `npm run run:klaytn:resume`.
-To completely terminate the network, run `npm run run:klaytn:terminate`.
-To remove log files, run `npm run run:klaytn:cleanlog`.
+To see the execution logs, run `pnpm run run:klaytn:log`.
+To stop the network, run `pnpm run run:klaytn:stop`.
+To resume the network, run `pnpm run run:klaytn:resume`.
+To completely terminate the network, run `pnpm run run:klaytn:terminate`.
+To remove log files, run `pnpm run run:klaytn:cleanlog`.
 
 # Deploying Contracts
 
@@ -49,19 +50,19 @@ To remove log files, run `npm run run:klaytn:cleanlog`.
 Deploy KIP-7 contract
 
 ```bash
-npm run deploy:klaytn:kip7
+pnpm run deploy:klaytn:kip7
 ```
 
 Deploy KIP-17 contract
 
 ```bash
-npm run deploy:klaytn:kip17
+pnpm run deploy:klaytn:kip17
 ```
 
 Deploy kip37 contract
 
 ```bash
-npm run deploy:klaytn:kip37
+pnpm run deploy:klaytn:kip37
 ```
 
 ## Deploying a contract to Baobab Testnet
@@ -94,7 +95,7 @@ kasBaobab: {
 ```
 
 ```bash
-npm run deploy:kasBaobab:<contractname> 
+pnpm run deploy:kasBaobab:<contractname> 
 ```
 
 ### Connecting to Baobab via Public RPC endpoint
@@ -114,7 +115,7 @@ You can export the `privateKey` from kaikas wallet and `URL` from the klaytn [do
 ```
 
 ```bash
-npm run deploy:baobab:<contractname>
+pnpm run deploy:baobab:<contractname>
 ```
 
 ## Run the Frontend
@@ -131,8 +132,8 @@ Register in Infura <https://infura.io/dashboard> and create an IPFS project to g
 Paste the key and secret in .env.local file to run the frontend.
 
 ```bash
-npm install
-npm run dev
+pnpm install
+pnpm run dev
 ```
 
 Note: The current version of frontend does not communicate with the local network. It only interacts with the contracts deployed in baobab network. It will release in the future versions.
@@ -148,11 +149,11 @@ Issue : Error: Private keys file has not been downloaded to the local directory!
     com.docke 5371      xxx  134u  IPv6 0xd988cab51d5e3b71      0t0  TCP *:8551 (LISTEN)
     ```
 
-if the network is not running then execute ```npm run run:klaytn``` and start the local network
+if the network is not running then execute ```pnpm run run:klaytn``` and start the local network
 
 2. Check whether privateKeys.js file is available in your root folder. If not, execute the below command
 
-    ```npm run run:klaytn:createAccounts```
+    ```pnpm run run:klaytn:createAccounts```
 
 ## Want to Contribute to Klaytn Dev Sandbox? <a id="want-to-contribute"></a>
 

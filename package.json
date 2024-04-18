@@ -1,0 +1,8 @@
+{
+  "name": "klaytn-dev-sandbox-truffle",
+  "version": "1.0.0",
+  "description": "Boilerplate code for front-end(UI) and contracts(backend) that are helpful to building blockchain applications on Klaytn.",
+  "keywords": [],
+  "author": "klaytn",
+  "license": "MIT"
+}
