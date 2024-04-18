@@ -32,11 +32,7 @@ Note: Execute below commands from gitbash if Windows machine is used
 You can easily deploy a local Klaytn network via the following command:
 
 ```bash
-<<<<<<< HEAD
-npm run run:klaytn
-=======
 pnpm run run:klaytn
->>>>>>> truffle1
 ```
 
 To see the execution logs, run `pnpm run run:klaytn:log`.
@@ -54,31 +50,19 @@ To remove log files, run `pnpm run run:klaytn:cleanlog`.
 Deploy KIP-7 contract
 
 ```bash
-<<<<<<< HEAD
-npm run deploy:klaytn:kip7
-=======
 pnpm run deploy:klaytn:kip7
->>>>>>> truffle1
 ```
 
 Deploy KIP-17 contract
 
 ```bash
-<<<<<<< HEAD
-npm run deploy:klaytn:kip17
-=======
 pnpm run deploy:klaytn:kip17
->>>>>>> truffle1
 ```
 
 Deploy kip37 contract
 
 ```bash
-<<<<<<< HEAD
-npm run deploy:klaytn:kip37
-=======
 pnpm run deploy:klaytn:kip37
->>>>>>> truffle1
 ```
 
 ## Deploying a contract to Baobab Testnet
@@ -111,11 +95,7 @@ kasBaobab: {
 ```
 
 ```bash
-<<<<<<< HEAD
-npm run deploy:kasBaobab:<contractname> 
-=======
 pnpm run deploy:kasBaobab:<contractname> 
->>>>>>> truffle1
 ```
 
 ### Connecting to Baobab via Public RPC endpoint
@@ -135,11 +115,7 @@ You can export the `privateKey` from kaikas wallet and `URL` from the klaytn [do
 ```
 
 ```bash
-<<<<<<< HEAD
-npm run deploy:baobab:<contractname>
-=======
 pnpm run deploy:baobab:<contractname>
->>>>>>> truffle1
 ```
 
 ## Run the Frontend
