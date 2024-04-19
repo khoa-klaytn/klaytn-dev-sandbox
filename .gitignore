@@ -53,13 +53,11 @@ contracts/artifacts
 #Deployment files
 frontend/deployed/
 
-#network log files
-contracts/network/local-klaytn-deploy/
-contracts/network/*.log
+# run-local log files
+contracts/run-local/local-klaytn-deploy/
+contracts/run-local/*.log
 contracts/test/*.log
+contracts/privateKeys.js
 
 #contract build files 
 contracts/build
-
-#local network privatekey
-contracts/privateKeys.js

@@ -8,12 +8,12 @@ import type {
 } from "@nomicfoundation/ignition-core/dist/src/types/module";
 import type { HardhatRuntimeEnvironment } from "hardhat/types";
 
-import KIP7Module from "../ignition/modules/KIP7";
-import KIP17Module from "../ignition/modules/KIP17";
-import KIP37Module from "../ignition/modules/KIP37";
-import parameters from "../ignition/parameters.json";
+import KIP7Module from "../../ignition/modules/KIP7";
+import KIP17Module from "../../ignition/modules/KIP17";
+import KIP37Module from "../../ignition/modules/KIP37";
+import parameters from "../../ignition/parameters.json";
 
-const deployed_dir = resolve(join(__dirname, "../../frontend/deployed/"));
+const deployed_dir = resolve(join(__dirname, "../../../frontend/deployed/"));
 
 task("deploy", "Deploy contract(s)")
   .addParam(
