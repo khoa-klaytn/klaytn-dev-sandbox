@@ -3,8 +3,10 @@
   "version": "1.0.0",
   "description": "A developer sandbox with sample DApp and smart contracts for the developer community of Klaytn blockchain",
   "scripts": {
-    "hh": "pnpm run --filter \"./contracts/\" compile && pnpm run --filter \"./contracts/\" deploy && pnpm run --filter \"./frontend/\" build && pnpm run --filter \"./frontend/\" start",
-    "local": "pnpm run --filter \"./contracts/\" compile && pnpm run --filter \"./contracts/\" deploy && pnpm run --filter \"./frontend/\" build && pnpm run --filter \"./frontend/\" start"
+    "hh": "bash ./scripts/hh.sh",
+    "local": "bash ./scripts/local.sh",
+    "specific": "bash ./scripts/specific.sh",
+    "stop:local": "pnpm run --filter \"./contracts\" run:local:stop"
   },
   "author": "klaytn",
   "license": "MIT"

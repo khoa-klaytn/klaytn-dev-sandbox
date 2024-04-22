@@ -62,6 +62,32 @@ pnpm run start
 | using Klaytn API Service — Baobab | `pnpm run kasBaobab` (read Detailed Guide first) | [using-kasBaobab.md](./docs/using-kasBaobab.md)                           |
 | deploying only specific contracts | `pnpm run specific`                              | [deploying-specific-contracts.md](./docs/deploying-specific-contracts.md) |
 
+### Debugging
+
+#### Port 3000 in use
+
+```bash
+> next start
+
+Error: listen EADDRINUSE: address already in use 0.0.0.0:3000`
+```
+
+Using Local Klaytn Node runs a server on port 3000, preventing `next start` from running. To resolve, either...
+
+A. Stop the Local Klaytn Node server
+
+```bash
+pnpm run stop:local # from root directory
+# or
+pnpm run run:local:stop # from contracts/
+```
+
+or
+
+B. Run `next start` on a different port
+
+- the Quick Script [`pnpm run local`](./scripts/local.sh) runs `next start` with `-p 3001` to avoid this issue.
+
 ## Want to Contribute to Klaytn Dev Sandbox? <a id="want-to-contribute"></a>
 
 In line with our commitment to decentralization, all Klaytn codebase and its documentations are completely open source. Klaytn always welcomes your contribution. Anyone can view, edit, fix its contents and make suggestions. You can either create a pull request on GitHub or use GitBook. Make sure to sign our [Contributor License Agreement (CLA)](https://cla-assistant.io/klaytn/klaytn-dev-sandbox) first and there are also a few guidelines our contributors would check out before contributing:
