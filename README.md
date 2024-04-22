@@ -54,10 +54,13 @@ pnpm run start
 
 ## Usage Variations
 
-- [using Local Klaytn Node](./docs/using-local-klaytn-node.md)
-- [using Baobab Testnet](./docs/using-baobab-testnet.md)
-- [using Klaytn API Service — Baobab](./docs/using-kasBaobab.md)
-- [deploying only specific contracts](./docs/deploying-specific-contracts.md)
+| Variation                         | Quick Script                                     | Detailed Guide ([./docs/](./docs/)*)                                      |
+|-----------------------------------|--------------------------------------------------|---------------------------------------------------------------------------|
+| Basic Usage (this)                | `pnpm run hh`                                    | -                                                                         |
+| using Local Klaytn Node           | `pnpm run local`                                 | [using-local-klaytn-node.md](./docs/using-local-klaytn-node.md)           |
+| using Baobab Testnet              | `pnpm run baobab` (read Detailed Guide first)    | [using-baobab-testnet.md](./docs/using-baobab-testnet.md)                 |
+| using Klaytn API Service — Baobab | `pnpm run kasBaobab` (read Detailed Guide first) | [using-kasBaobab.md](./docs/using-kasBaobab.md)                           |
+| deploying only specific contracts | `pnpm run specific`                              | [deploying-specific-contracts.md](./docs/deploying-specific-contracts.md) |
 
 ## Want to Contribute to Klaytn Dev Sandbox? <a id="want-to-contribute"></a>
 

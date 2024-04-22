@@ -1,10 +1,8 @@
 import { Fragment, useEffect } from 'react'
 import { Dialog, Transition } from '@headlessui/react'
 import Image from 'next/image'
-import metamask from '../public/metamask.png'
 import providerContext from '../context/context'
 import { useContext } from 'react'
-import kaikas from '../public/kaikas.jpeg'
 import { toast } from 'react-toastify'
 import Web3 from 'web3'
 import Caver from 'caver-js'
@@ -144,7 +142,7 @@ const WalletModal = (props: ModalProps) => {
                     onClick={() => connectKaikas(state)}
                   >
                     <div>
-                      <Image src={kaikas} width="100px" height="100px" />
+                      <Image src="/kaikas.jpeg" width="100px" height="100px" />
                       <p className="text-center text-xl">Kaikas</p>
                     </div>
                   </div>
@@ -154,7 +152,7 @@ const WalletModal = (props: ModalProps) => {
                     // onClick={connectMetamaskWithCaver}
                   >
                     <div>
-                      <Image src={metamask} width="100px" height="100px" />
+                      <Image src="/metamask.png" width="100px" height="100px" />
                       <p className="text-center text-xl">Metamask</p>
                     </div>
                   </div>
