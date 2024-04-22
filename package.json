@@ -5,6 +5,8 @@
   "scripts": {
     "hh": "bash ./scripts/hh.sh",
     "local": "bash ./scripts/local.sh",
+    "baobab": "bash ./scripts/baobab.sh",
+    "kasBaobab": "bash ./scripts/kasBaobab.sh",
     "specific": "bash ./scripts/specific.sh",
     "stop:local": "pnpm run --filter \"./contracts\" run:local:stop"
   },
